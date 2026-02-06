@@ -8,7 +8,7 @@ console.log(x);
 console.log(typeof x);
 
 
-// let datas = 10;
-// data = "10";
-// data = true;
-// console.log(typeof data);
+let datas = 50;
+data = "50";
+data = true;
+console.log(typeof data);
