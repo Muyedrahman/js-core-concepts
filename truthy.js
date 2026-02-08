@@ -1,20 +1,35 @@
-let a = false;
-let b = 0;
-let c = "";
-let d = null;
-let e = undefined;
-let f = NaN;
+let data;
+data = 0;
+data = ''; // empty string is falsy
+data = ' '; // has an white space
+data = '0';
+data = false;
+data = true;
+data = null;
+data = {};
+data = [];
+data = false;
+data = true;
+console.log('value of data' , data);
 
-if (!a) console.log("a is falsy"); // a is falsy
-if (!b) console.log("b is falsy"); // b is falsy
-
-
-
-function checkValue(value) {
-  if (value) {
-    console.log(`${value} is truthy`);
-  } else {
-    console.log(`${value} is falsy`);
-  }
+if (data){
+    console.log("value of data is truthy");
 }
+else{
+    console.log(data,'is falsy')
+}
+ // if i need to capture the falsy value to go inside go inside if block
+//  use logical not
+
+if(!data){
+    console.log('inside if with a falsy value')
+}
+// capture all positive value
+// double not !!
+//capture any  value to boolean (true false)
+if(!!data === true){
+    console.log('only true inside the double not ')
+}
+
+
 
